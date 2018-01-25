@@ -13,9 +13,9 @@
 	<!-- 提供方应用信息，用于计算依赖关系 -->
 	<dubbo:application name="demo.vote.provider" />
 
-	<dubbo:registry address="zookeeper://${ZOOKEEPER_HOST}:2181" />
+	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
 
-	<dubbo:protocol name="dubbo" port="28019" host="127.0.0.1" />
+	<dubbo:protocol name="dubbo" port="28019" host="localhost" />
 
 	<!-- 投票服务 -->
 	<dubbo:service interface="com.goodrain.demo.vote.service.VoteService"
